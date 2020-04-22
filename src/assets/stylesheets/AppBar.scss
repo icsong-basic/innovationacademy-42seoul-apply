@@ -1,0 +1,41 @@
+#appbar {
+  position: fixed;
+  top: 0;
+  background-color: rgba(1, 186, 188, 0.9);
+  will-change: background-color;
+  transition: background-color 0.5s;
+  &.top {
+    background-color: rgb(1, 186, 188);
+  }
+  .right {
+    position: absolute;
+    right: 0;
+  }
+  .links {
+    // font-family: "Montserrat", sans-serif;
+    text-align: center;
+    width: 100%;
+    a {
+      margin: 0 30px;
+      color: #000000;
+      will-change: color;
+      transition: color 0.2s;
+      &.active {
+        font-weight: bold;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .hamburger-menu {
+      display: flex;
+    }
+    .links {
+      display: none;
+    }
+  }
+}

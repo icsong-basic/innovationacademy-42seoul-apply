@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+KR&display=swap");
+@import "./AppBar.scss";
+@import "./UserPasswordReset.scss";
+@import "./EssayPage.scss";
+@import "./MyPage.scss";
+@import "./NoticePage.scss";
+@import "./Quill.scss";
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+button {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.login-checking {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.MuiBox-root {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 20px;
+}
+
+.photo-input {
+  border-radius: 16px;
+  position: relative;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-size: cover;
+  background-position: center center;
+  &.dotted {
+    border: 3px dotted #42a5f5;
+  }
+  p {
+    text-align: center;
+  }
+  .delete-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.profile-input {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.italic {
+  font-style: italic;
+}
+.text-align-center {
+  text-align: center;
+}
+.text-align-right {
+  text-align: right;
+}
+.text-align-left {
+  text-align: left;
+}
+
+.dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.daum-postcode-search-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  max-width: 100vw;
+  max-height: 100vh;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.file-input {
+  border-radius: 16px;
+  position: relative;
+  height: auto;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-size: cover;
+  background-position: center center;
+  border: 3px dotted #42a5f5;
+  p {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    word-break: break-all;
+    padding: 0 30px;
+    margin: 0;
+    span.file-name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: calc(100% - 100px);
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .delete-button {
+    margin: 10px;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.5);
+  margin: 1em 0;
+}
+
+.tel-input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+}
+
+.MuiTypography-root.page-title {
+  font-weight: 500;
+  text-align: center;
+  margin: 0.5em 0 1em;
+  display: none;
+}
+
+.MuiDrawer-root.nav-drawer {
+  &.mobile {
+    display: none;
+  }
+  &.pc {
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    &.mobile {
+      display: block;
+    }
+    &.pc {
+      display: none;
+    }
+  }
+
+  .MuiPaper-root {
+    width: 200px;
+  }
+  a {
+    color: #ffffff;
+  }
+}
+
+main {
+  padding-top: 64px;
+  // padding-left: 200px;
+}
+
+.board-post-modal {
+  .paper {
+    position: relative;
+    min-width: 300px;
+    width: 500px;
+    max-width: calc(100vw - 20px);
+    background-color: #ffffff;
+    opacity: 0.1;
+    outline: none;
+    color: #000000;
+    box-sizing: border-box;
+    > div {
+      overflow-y: auto;
+      padding: 1em;
+      margin-bottom: 56px;
+      height: calc(80vh - 56px);
+    }
+    a {
+      color: #304ffe;
+    }
+    &:focus {
+      outline: none;
+    }
+    .close-btn {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      border: none;
+      outline: none;
+      color: #000000;
+      background-color: #01babc;
+      font-size: 16px;
+      height: 56px;
+      font-weight: 700;
+    }
+  }
+}
