@@ -249,6 +249,7 @@ export default function MyPage({ }: Props) {
     const requiredInputs: MyPageInputType[] = [
         { label: '한글 이름', type: 'text', value: korName, setter: setKorName },
         { label: '영문 이름', type: 'text', value: engName, setter: setEngName },
+        { label: '주민등록번호', type: 'social-security-number', value: socialSecurityNumber, setter: setSocialSecurityNumber },
         { label: '성별', type: 'select', value: sex, setter: setSex, options: sexOptions },
         { label: '국적', type: 'country-select', value: country, setter: setCountry },
         { label: '생년월일', type: 'date', value: birthday, setter: setBirthday },
@@ -267,7 +268,6 @@ export default function MyPage({ }: Props) {
     ];
 
     const optionalInputs: MyPageInputType[] = [
-        { label: '주민등록번호', type: 'social-security-number', value: socialSecurityNumber, setter: setSocialSecurityNumber },
         { label: '신분증 사진', type: 'file', value: identificationPhotoFile, uploadedValue: identificationPhoto, fileSetter: setIdentificationPhotoFile, uploadedValueSetter: setIdentificationPhoto },
         { label: '통장 사본', type: 'bank', value: bankbookPhotoFile, uploadedValue: bankbookPhoto, fileSetter: setBankbookPhotoFile, uploadedValueSetter: setBankbookPhoto, bank: bank, bankSetter: setBank, accountNumber: accountNumber, accountNumberSetter: setAccountNumber },
         // 200110 삭제요청
