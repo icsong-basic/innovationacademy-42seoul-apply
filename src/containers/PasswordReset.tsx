@@ -129,7 +129,7 @@ export default withRouter(function PasswordReset({ history, location, match }) {
                                 fullWidth
                                 size="large"
                                 className={classes.loginBtn}
-                                disabled={resetBtnDisabled}>초기화 메일 전송</Button><br />
+                                disabled={resetBtnDisabled}>변 경</Button><br />
 
                         </form>
                     </Grid>
