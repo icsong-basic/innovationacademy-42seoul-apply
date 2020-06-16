@@ -610,7 +610,7 @@ const admissionDateOptions = [
 
 const employmentStatusOptions = ["미취업자", "재직자", "개인사업자"]
 
-const emergencyContactRelationOptions = ['부', '모']
+const emergencyContactRelationOptions = ['부', '모', '조부', '조모', '남편', '아내', '자', '형', '매', '제', '기타']
 
 function getDataKorLabel(dataKey: string): string {
     switch (dataKey) {
