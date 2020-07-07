@@ -604,13 +604,12 @@ const highestLevelOfEducationOptions = ['고졸(예정)', '대학 재학 중', '
 const sexOptions = [{ value: 'male', label: '남성' }, { value: 'female', label: '여성' }]
 
 const admissionDateOptions = [
-    { label: '2기 1차(2020년 06월)', value: moment('202006', 'YYYYMM').valueOf() },
     { label: '2기 2차(2020년 07월)', value: moment('202007', 'YYYYMM').valueOf() }
 ];
 
 const employmentStatusOptions = ["미취업자", "재직자", "개인사업자"]
 
-const emergencyContactRelationOptions = ['부', '모', '조부', '조모', '남편', '아내', '자', '형', '매', '제', '기타']
+const emergencyContactRelationOptions = ['부', '모', '조부', '조모', '남편', '아내', '자', '형', '매', '제', '기타','애인']
 
 function getDataKorLabel(dataKey: string): string {
     switch (dataKey) {
