@@ -604,7 +604,7 @@ const highestLevelOfEducationOptions = ['고졸(예정)', '대학 재학 중', '
 const sexOptions = [{ value: 'male', label: '남성' }, { value: 'female', label: '여성' }]
 
 const admissionDateOptions = [
-    { label: '3기 1차(2020년 10월)', value: moment('202010', 'YYYYMM').valueOf() }
+    { label: '3기 2차(2020년 11월)', value: moment('202011', 'YYYYMM').valueOf() }
 ];
 
 const employmentStatusOptions = ["미취업자", "재직자", "개인사업자"]
